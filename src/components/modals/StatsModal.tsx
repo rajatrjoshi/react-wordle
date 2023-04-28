@@ -16,7 +16,6 @@ import {
 import { GameStats } from '../../lib/localStorage'
 import { solutionGameDate, tomorrow } from '../../lib/words'
 import { Histogram } from '../stats/Histogram'
-import { MigrationIntro } from '../stats/MigrationIntro'
 import { StatBar } from '../stats/StatBar'
 import { BaseModal } from './BaseModal'
 
@@ -62,10 +61,10 @@ export const StatsModal = ({
         isOpen={isOpen}
         handleClose={handleClose}
       >
-        <StatBar gameStats={gameStats} />
+        {/* <StatBar gameStats={gameStats} />
         {ENABLE_MIGRATE_STATS && (
           <MigrationIntro handleMigrateStatsButton={handleMigrateStatsButton} />
-        )}
+        )} */}
       </BaseModal>
     )
   }
@@ -134,12 +133,12 @@ export const StatsModal = ({
           </div> */}
         </div>
       )}
-      {ENABLE_MIGRATE_STATS && (
+      {/* {ENABLE_MIGRATE_STATS && (
         <div>
           <hr className="mt-4 -mb-4 border-gray-500" />
           <MigrationIntro handleMigrateStatsButton={handleMigrateStatsButton} />
         </div>
-      )}
+      )} */}
     </BaseModal>
   )
 }
