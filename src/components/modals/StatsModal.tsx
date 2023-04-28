@@ -5,7 +5,6 @@ import Countdown from 'react-countdown'
 import {
   DATE_LOCALE,
   ENABLE_ARCHIVED_GAMES,
-  ENABLE_MIGRATE_STATS,
 } from '../../constants/settings'
 import {
   ARCHIVE_GAMEDATE_TEXT,
